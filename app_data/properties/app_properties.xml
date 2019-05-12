@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This XML file allows us to easily customize the look and language used
+    in our program's user interface. Note that this properties file is only
+    for the standard controls for an app from the Desktop Java Framework, so
+    it would not include things initialized for the workspace, which is
+    customizable.
+-->
+<properties>
+    <property_list>        
+        <!-- DESKTOP JAVA FRAMEWORK CONTROLS SETTINGS -->
+        <property name="APP_TITLE"	    value="goLogoLo"></property>
+        <property name="APP_BANNER"         value="goLogoLo_logo.png"></property>
+	<property name="APP_LOGO"	    value="goLogoLo_desktop_icon_2.png"></property>
+        <property name="APP_EXPORT_PAGE"    value="index.html"></property>
+        <property name="APP_HELP_PAGE"      value="Help.html"></property>
+        <property name="APP_ABOUT_PAGE"     value="About.html"></property>
+	<property name="APP_CSS"	    value="gll_style.css"></property>
+        <property name="APP_PATH_CSS"	    value="workspace/style/"></property>
+        <property name="APP_PATH_EXPORT"    value="./export/"></property>
+        <property name="APP_PATH_ICONS"     value="./images/icons/"></property>
+        <property name="APP_PATH_IMAGES"    value="./images/"></property>
+        <property name="APP_PATH_WEB"       value="./app_data/web/"></property>
+        <property name="PREF_WIDTH"         value="800"></property>
+        <property name="PREF_HEIGHT"        value="600"></property>
+        <property name="START_MAXIMIZED"    value="true"></property>
+
+        <!-- TOP TOOLBARS AND CONTROLS TO INCLUDE -->
+        <property name="HAS_WELCOME_DIALOG"     value="true"></property>
+        <property name="HAS_TOP_TOOLBAR"        value="true"></property>        
+        <property name="HAS_FILE_TOOLBAR"       value="true"></property>
+        <property name="HAS_NEW"                value="true"></property>
+        <property name="HAS_LOAD"               value="true"></property>
+        <property name="HAS_CLOSE"              value="true"></property>
+        <property name="HAS_SAVE"               value="true"></property>
+        <property name="HAS_SAVE_AS"            value="true"></property>
+        <property name="HAS_EXPORT"             value="true"></property>
+        <property name="HAS_EXIT"               value="true"></property>
+        <property name="HAS_CLIPBOARD_TOOLBAR"  value="true"></property>
+        <property name="HAS_UNDO_TOOLBAR"       value="true"></property>
+        <property name="HAS_NAVIGATION_TOOLBAR" value="true"></property>
+        <property name="HAS_HELP_TOOLBAR"       value="true"></property>
+        <property name="HAS_HELP"               value="true"></property>
+        <property name="HAS_LANGUAGE"           value="true"></property>
+        <property name="HAS_ABOUT"              value="true"></property>
+
+        <!-- PROGRAM ICON FILES - FILE TOOLBAR -->        
+        <property name="NEW_BUTTON_ICON"        value="New.png"></property>
+        <property name="LOAD_BUTTON_ICON"       value="Load.png"></property>
+        <property name="CLOSE_BUTTON_ICON"      value="Close.png"></property>
+        <property name="SAVE_BUTTON_ICON"       value="Save.png"></property>
+        <property name="SAVE_AS_BUTTON_ICON"    value="SaveAs.png"></property>
+        <property name="EXPORT_BUTTON_ICON"     value="Export.png"></property>
+        <property name="EXIT_BUTTON_ICON"       value="Exit.png"></property>
+
+        <!-- PROGRAM ICON FILES - CUT/COPY/PASTE TOOLBAR -->        
+        <property name="CUT_BUTTON_ICON"        value="Cut.png"></property>
+        <property name="COPY_BUTTON_ICON"       value="Copy.png"></property>
+        <property name="PASTE_BUTTON_ICON"      value="Paste.png"></property>
+
+        <!-- PROGRAM ICON FILES - UNDO/REDO TOOLBAR -->        
+        <property name="UNDO_BUTTON_ICON"       value="Undo.png"></property>
+        <property name="REDO_BUTTON_ICON"       value="Redo.png"></property>
+        
+        <!-- ADD/DELETE COMPONENTS FILES - WORKSPACE OPTIONS -->
+        <property name="ADD_TEXT_BUTTON_ICON"                   value="AddText.png"></property>
+        <property name="ADD_IMAGE_BUTTON_ICON"                  value="AddImage.png"></property>
+        <property name="ADD_RECTANGLE_BUTTON_ICON"              value="AddRectangle.png"></property>
+        <property name="ADD_CIRCLE_BUTTON_ICON"                 value="AddCircle.png"></property>
+        <property name="ADD_TRIANGLE_BUTTON_ICON"               value="AddTriangle.png"></property>
+        <property name="DELETE_SELECTED_COMPONENT_BUTTON_ICON"  value="DeleteSelected.png"></property>
+        
+        <!-- PROGRAM ICON FILES - FILE TOOLBAR --> 
+        <property name="RESET_VIEWPORT_BUTTON_ICON"   value="ResetViewport.png"></property>
+        <property name="ZOOM_IN_BUTTON_ICON"          value="ZoomIn.png"></property>
+        <property name="ZOOM_OUT_BUTTON_ICON"         value="ZoomOut.png"></property>
+        <property name="RESIZE_LOGO_BUTTON_ICON"      value="ResizeLogo.png"></property>
+        <!-- Snap will be a toggle button with a label of String value "Snap" -->
+
+        
+        <!-- PROGRAM ICON FILES - TEXT OPTIONS -->
+        <property name="BOLD_BUTTON_ICON"                      value="Bold.png"></property>
+        <property name="ITAL_BUTTON_ICON"                      value="Italic.png"></property>
+        <property name="INCREASE_FONT_SIZE_BUTTON_ICON"        value="IncreaseFont.png"></property>
+        <property name="DECREASE_FONT_SIZE_BUTTON_ICON"        value="DecreaseFont.png"></property>
+        <property name="UNDERLINE_BUTTON_ICON"                 value="Underline.png"></property>
+        
+        <!-- PROGRAM ICON FILES - LAYER OPTIONS -->
+        <property name="MOVE_LAYER_UP_BUTTON_ICON"             value="moveLayerUp.png"></property>
+        <property name="MOVE_LAYER_DOWN_BUTTON_ICON"           value="moveLayerDown.png"></property>
+        <property name="EDIT_LAYER_BUTTON_ICON"                value="editLayer.png"></property>
+        
+        <!-- PROGRAM ICON FILES - FILE TOOLBAR -->        
+        <property name="LANGUAGE_BUTTON_ICON"   value="Language.png"></property>
+        <property name="HELP_BUTTON_ICON"       value="Help.png"></property>
+        <property name="ABOUT_BUTTON_ICON"      value="About.png"></property>
+
+        <!-- TDLM ITEM BUTTONS TOOLBAR -->
+        <property name="TDLM_ADD_ITEM_BUTTON_ICON"       value="AddItem.png"></property>
+        <property name="TDLM_REMOVE_ITEM_BUTTON_ICON"    value="RemoveItem.png"></property>
+        
+        <!-- THIS IS THE FILE WE'LL USE TO MAKE OUR EXPORTED WEB FILE -->
+        <property name="TDLM_EXPORT_TEMPLATE_FILE_NAME"  value="ToDoTemplate.html"></property>     
+
+        <!-- ENGLISH IS THE DEFAULT -->
+        <property name="DEFAULT_LANGUAGE"               value="English"></property>
+        <property name="ENGLISH_ABBREVIATION"           value="EN"></property>
+        <property name="KOREAN_ABBREVIATION"            value="KO"></property>
+        <property name="SPANISH_ABBREVIATION"           value="SP"></property>
+        <property name="DEFAULT_FONTFAMILY"              value="Arial"></property>
+        <property name="DEFAULT_FONTSIZE"              value="16"></property>
+        
+    </property_list>
+    <property_options_list>
+        <property_options name="LANGUAGE_OPTIONS">
+            <option>English</option>
+            <option>Korean</option>
+        </property_options>
+    </property_options_list>
+</properties>

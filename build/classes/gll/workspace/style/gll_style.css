@@ -1,0 +1,261 @@
+/*
+    This style sheet manages the layout and style for all controls inside the
+    TDLM JavaFX application. Note that the stylesheet has been setup such that
+    all colors in use are declared first as swatch colors inside the root 
+    and so one can change the color theme used by the app simply by changing
+    these colors.
+
+    Note that Material Design icons are being employed for all icon buttons
+    in this application, both for the Desktop Java Framework's top toolbar
+    as well as for icon buttons in the M3's edit toolbar. Note that this
+    app uses icons from https://material.io/icons/ and icon image sizes in
+    use are as follows:
+        djf top toolbar buttons: 36x36
+        
+
+    @author Richard McKenna
+    @version 1.0
+*/
+.root{
+    /* 
+        FIRST WE'LL DEFINE OUR SWATCHES, i.e. THE COMPLEMENTARY
+        COLORS THAT WE'LL USE TOGETHER IN MULTIPLE PLACES THAT
+        TOGETHER WILL MAKE UP A GIVEN THEME
+    */
+    -swatch-neutral:        #43a047;
+    -swatch-primary-up:     #A8C0AD;
+    -swatch-primary:        #009933;
+    -swatch-primary-down:   #E9E0ED;
+    -swatch-complement:     #E1E4CB;
+    -swatch-accent:         #227722;
+    -swatch-bright-accent:  #e8f5e9;
+    
+    -fx-font-family: "Roboto";
+}
+/** 
+    FIRST WE HAVE THE CONTROLS THAT THE DESKTOP JAVA FRAMEWORK
+    MAY BE MAKING USE OF:
+        .djf_top_toolbar: toolbar running the length of the top
+        .djf_top_toolbar_pane: a pane in the top toolbar with buttons
+        .djf_icon_button: buttons in the top toolbar panes
+**/
+.djf_top_toolbar {
+    -fx-background-color:   -swatch-neutral;
+    -fx-border-color:       -swatch-accent;
+    -fx-border-width:       2;
+    -fx-border-radius:      15;
+}
+.djf_toolbar_pane {
+    -fx-background-color:   -swatch-neutral;
+    -fx-border-color:       -swatch-accent;
+    -fx-border-width:       2;
+    -fx-border-radius:      15;
+}
+.djf_icon_button {
+    -fx-background-color:   transparent;
+    -fx-pref-height:        42;
+    -fx-pref-width:         42;
+    -fx-min-height:         42;
+    -fx-min-width:          42;
+    -fx-padding:            0;
+}
+.djf_icon_button:hover {
+    -fx-background-color: linear-gradient(-swatch-primary-down, -swatch-primary-up);    
+}
+.djf_welcome_banner {
+    -fx-border-color:transparent;
+    -fx-border-width:10;
+}
+.djf_welcome_header {
+    -fx-font-size: 32pt;
+    -fx-background-color: transparent;
+}
+.djf_welcome_recent_pane {
+    -fx-padding: 20 20 20 20;
+    -fx-background-color:#4caf50;
+}
+.djf_welcome_recent_button {
+    -fx-font-size: 14pt;
+    -fx-underline: true;
+    -fx-text-fill: blue;
+    -fx-background-color:transparent;
+}
+.djf_welcome_recent_button:hover {
+    -fx-text-fill: magenta;
+}
+.djf_welcome_recent_button:pressed {
+    -fx-text-fill: yellow;
+}
+.djf_welcome_new_pane {
+    -fx-background-color:transparent;
+}
+.djf_welcome_new_button {
+    -fx-font-size:20pt;
+    -fx-background-color:transparent;
+    -fx-border-width:2px;
+    -fx-border-color:black;
+    -fx-border-radius:15px;
+}
+.djf_welcome_new_button:hover{
+    -fx-background-color:-swatch-primary;
+}
+.djf-welcome_new_button:pressed{
+    -fx-background-color:-swatch-accent;
+}
+
+/**
+    NEXT THE APP-SPECIFIC CONTROLS
+**/
+.gll_text_button, .gll_icon_button {
+    -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+}
+.gll_text_button:pressed, .gll_icon_button:pressed {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );    
+    -fx-background-color:
+        linear-gradient(#c9e0cd, #a9d0bd),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+.gll_text_button:hover, .gll_icon_button:hover {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );    
+}
+.gll_text_button{
+    -fx-max-width:130px;
+    -fx-min-height:50px;
+    -fx-max-height:50px;
+}
+.gll_icon_button {
+    -fx-min-width:100px;
+    -fx-max-width:100px;
+    -fx-min-height:50px;
+    -fx-max-height:50px;
+}
+.gll_pane{
+    -fx-background-color: rgb(125, 204, 105);
+    -fx-border: 1 1 0 0;
+    -fx-border-color: black;
+    -fx-border-radius: 10;
+    -fx-padding: 15 15 15 15;
+    /*-fx-effect: dropshadow(three-pass-box, purple, 10, 0, 0, 0); */
+}
+
+.gll_box {
+    -fx-background-color: rgb(125, 204, 105);
+    -fx-border: 1 1 0 0;
+    -fx-border-color: black;
+    -fx-border-radius: 10;
+    -fx-padding: 8 8 8 8;
+    /*-fx-effect: dropshadow(three-pass-box, purple, 10, 0, 0, 0); */
+}
+
+.gll_label {
+    -fx-text-fill: black;
+    -fx-font-size:18px;
+    /*-fx-effect: dropshadow(three-pass-box, purple, 10, 0, 0, 0); */
+}
+
+.gll-pane {
+    -fx-spacing: 3 3 3 3;
+}
+
+.gll_toolbar{
+    -fx-background-color: rgb(125, 204, 105);
+    -fx-padding: 15 15 15 15;
+    -fx-border: 1 1 0 0;
+    -fx-border-color: black;
+    -fx-border-radius: 2;
+}
+.gll_workspace{
+    -fx-padding: 64 0 0 0;
+}
+
+
+.gll_combobox{
+    -fx-background-color: rgb(125, 204, 105);
+    -fx-border: 1 1 0 0;
+    -fx-border-color: black;
+    -fx-border-radius: 10;
+    -fx-padding: 15 15 15 15;
+    -fx-max-width: 170px;
+}
+
+.gll_big_header, .gll_small_header, .gll_prompt, .gll_text_field {
+    -fx-font-weight: bold;
+    -fx-padding: 10 10 10 10;
+}
+.gll_big_header {
+    -fx-font-size: 24pt;
+}
+.gll_small_header {
+    -fx-font-size: 16pt;
+}
+.gll_prompt {
+    -fx-font-size: 14pt;
+    -fx-min-width: 130px;
+    -fx-max-width: 130px;
+}
+.gll_text_field {
+    -fx-font-size: 14pt;
+    -fx-min-width: 250px;
+    -fx-max-width: 250px;
+}
+.gll_table {
+    -fx-min-width:15em;
+    -fx-font-size: 14pt;
+}
+.column-header {
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+}
+.table-row-cell:empty {
+    -fx-background-color: #777777;
+    -fx-border-color: #777777;
+} 
+
+/* FOR DIALOGS */
+.gll_dialog_grid {
+    -fx-background-color: -swatch-primary;
+    -fx-background-radius: 5.0;
+    -fx-background-insets: 0.0 5.0 0.0 5.0;
+    -fx-padding: 10;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+.gll_dialog_header {
+    -fx-font-weight: bold;
+    -fx-font-size: 18pt
+}
+.gll_dialog_prompt {
+    -fx-font-weight: bold;
+    -fx-font-size: 14pt;
+}
+.gll_dialog_text_field, .gll_dialog_date_picker {
+    -fx-min-width:250px;
+    -fx-max-width:250px;
+    -fx-min-height:50px;
+    -fx-max-height:50px;
+    -fx-font-weight:bold;
+    -fx-font-size:14pt;
+}
+.gll_dialog_button {
+    -fx-min-width:100px;
+    -fx-max-width:100px;
+    -fx-min-height:50px;
+    -fx-max-height:50px;
+    -fx-font-weight: bold;
+    -fx-font-size: 16pt;
+}
+.tooltip {
+    -fx-font-size:14pt;
+    -fx-font-weight:bold;
+    -fx-background-radius: 50 50 50 50;
+    -fx-background-color:-swatch-bright-accent;
+}

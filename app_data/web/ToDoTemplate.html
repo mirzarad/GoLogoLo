@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                background-color: azure;
+            }
+            #to_do_list_table {
+                border:
+            }
+            #to_do_list_table {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            #to_do_list_table td, #to_do_list_table th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #to_do_list_table tr:nth-child(even){background-color: #f2f2f2;}
+
+            #to_do_list_table tr:hover {background-color: #ddd;}
+
+            #to_do_list_table th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>@todo List</h2>
+            <table>
+                <tr><td><strong>List Name:</strong></td><td id="list_name_td"></td></tr>
+                <tr><td><strong>List Owner:</strong></td><td id="list_owner_td"></td></tr>
+            </table>
+            <br />
+            <table id="to_do_list_table">
+                <tdata id="to_do_list_table_data">
+                    <tr id="to_do_list_table_heading">
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Assigned To</th>
+                        <th>Completed</th>
+                    </tr>
+                </tdata>
+            </table>
+        </div>
+    </body>
+</html>
